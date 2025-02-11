@@ -1,0 +1,29 @@
+:root{
+  --a:0;
+  --d:0;
+}
+
+use{
+  transform: rotate(var(--a)) translateX(0); 
+  fill: hsl(var(--a) 50% 50%);  
+  mix-blend-mode: screen;
+  opacity: 1;
+  animation: move 2s linear infinite;
+  animation-delay: var(--d);
+
+}
+
+.bg{ fill:#000}
+  @media (prefers-color-scheme: dark) {
+    use{
+      mix-blend-mode: multiply;
+    }
+    .bg{ fill:#fff}
+  }
+
+  @keyframes move {
+    100% {
+      transform:rotate(var(--a)) translateX(8px)  ;
+    }
+  }
+  

@@ -1,0 +1,26 @@
+.c{
+  animation: drift 23s linear infinite;
+  animation-delay: var(--delay);
+}
+
+.c>circle{
+  animation: tumble 7s ease-in-out infinite alternate;
+  animation-delay: var(--delay);
+}
+@keyframes drift {
+0%{
+  transform: translateX(-200px);
+}
+100% {
+    transform: translateX(200px);
+  }
+}
+
+@keyframes tumble {
+  0%{
+    transform: translateY(-10px);
+  }
+  100% {
+      transform: translateY(10px);
+    }
+  }

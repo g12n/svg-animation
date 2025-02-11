@@ -1,0 +1,22 @@
+@keyframes wg{
+  0%, 100%{transform: translate(0, 2px)}
+  
+  50% {transform: translate(0, -1px)}
+}
+
+@keyframes m1{100%{transform:translateX(8px)}}
+@keyframes m2{100%{transform:translateX(-8px)}}
+@keyframes b{ 50%{ transform: rotateZ(-10deg)}}
+
+.b{
+    transform: rotateZ(10deg);
+    animation: b 4s ease-in-out infinite;
+
+}
+.wg {
+    transform: translate(0, 0);
+    animation: wg 10s ease-in-out infinite;
+}
+
+.w1{animation: m1 1.5s linear infinite}
+.w2{animation:m2 2s linear infinite}

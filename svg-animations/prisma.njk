@@ -1,0 +1,30 @@
+---
+title: Prisma
+permalink: "svg/prisma.svg"
+tags: circleAnimations
+background: 100022
+color: fff
+---
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="-6 -6 12 12">
+
+<clipPath id="PrismaClipPath">
+      <circle r="5" />
+</clipPath>
+
+
+{% set css %}{% include "./prisma.css" %}{% endset %}<style>{{ css | safe }}</style>
+
+<circle r="5.2" class="bg" />
+
+
+<g clip-path="url(#PrismaClipPath)">
+<path id="wave"  d="M-16 3 q2 1 4 0 t 4 0 t 4 0 t 4 0t 4 0 t 4 0 t 4 0 t 4 0 v10 H-16 z"/>
+<circle r="5" class="bg" />
+
+{% for i in [1,2,3,4,5,6,7,8,9,10,11,12] %}
+{%set angle  %}{{360/12*i}}{%endset%}
+<use href="#wave" style="--a:{{angle}}deg; --d:{{i*-0.5}}s" />
+{% endfor %}
+</g>
+</svg> 
+ 

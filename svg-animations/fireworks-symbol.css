@@ -1,0 +1,31 @@
+@keyframes explode {
+  100% {
+    transform: rotate(var(--angle)) translate(300px, 0);
+  }
+}
+
+@keyframes fade {
+  1% {
+    opacity: 1;
+  }
+  60%, 100% {
+    opacity: 0;
+  }
+}
+
+:root{
+  --delay: -1s;
+}
+.spark {
+  fill: #fff;
+  
+  opacity: 1;
+  transform: rotate(var(--angle)) translate(20px, 0);
+  animation: explode 3s cubic-bezier(0, 0.99, 0.25, 0.97) var(--delay) infinite, fade 3s var(--delay) infinite
+}
+
+.sparks {
+  transform-origin: 0 0;
+}
+use{transform: scale(var(--scale),var(--scale)) }
+

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -10 55 20">
+<style>svg{
+  background: #f9f4ec;
+}
+circle {
+  animation: b 1s cubic-bezier(0.420, 0.000, 0.580, 1.000) alternate infinite;
+  opacity: 0.8;
+  transform: translateY(-6px) scale(0.3); transform-origin: 50% 50%;
+}
+
+@keyframes b {
+ 100%{
+    transform: translateY(6px) scale(1)
+  }
+}
+
+</style>
+ 
+  <circle cx="5" fill="hsl(0,70%,70%)" r="2"  style="transform-origin: 5px 0; animation-delay:-0.2s "/>
+  
+  <circle cx="10" fill="hsl(20,70%,70%)" r="2"  style="transform-origin: 10px 0; animation-delay:-0.4s "/>
+  
+  <circle cx="15" fill="hsl(40,70%,70%)" r="2"  style="transform-origin: 15px 0; animation-delay:-0.6000000000000001s "/>
+  
+  <circle cx="20" fill="hsl(60,70%,70%)" r="2"  style="transform-origin: 20px 0; animation-delay:-0.8s "/>
+  
+  <circle cx="25" fill="hsl(80,70%,70%)" r="2"  style="transform-origin: 25px 0; animation-delay:-1s "/>
+  
+  <circle cx="30" fill="hsl(100,70%,70%)" r="2"  style="transform-origin: 30px 0; animation-delay:-1.2000000000000002s "/>
+  
+  <circle cx="35" fill="hsl(120,70%,70%)" r="2"  style="transform-origin: 35px 0; animation-delay:-1.4000000000000001s "/>
+  
+  <circle cx="40" fill="hsl(140,70%,70%)" r="2"  style="transform-origin: 40px 0; animation-delay:-1.6s "/>
+  
+  <circle cx="45" fill="hsl(160,70%,70%)" r="2"  style="transform-origin: 45px 0; animation-delay:-1.8s "/>
+  
+  <circle cx="50" fill="hsl(180,70%,70%)" r="2"  style="transform-origin: 50px 0; animation-delay:-2s "/>
+  
+</svg>

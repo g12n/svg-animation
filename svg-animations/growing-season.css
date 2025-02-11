@@ -1,0 +1,42 @@
+@keyframes leaf {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg) scale(0.75);
+    opacity: 0;
+  }
+}
+
+.f1, .f2, .f3, .f4 {
+  transform-origin: 0 -100px;
+  animation: leaf 4s infinite alternate;
+  animation-fill-mode: backwards;
+  animation-delay: 1s;
+}
+
+.f1 {
+  transform: translate(-75px, 0px) rotate(-45deg);
+  fill: #888f3d;
+}
+.f1.right {
+  transform: translate(75px, 0px) rotate(45deg);
+}
+
+.f2 {
+  transform: translate(-75px, -90px) rotate(-45deg);
+  fill: #b5bf40;
+}
+.f2.right {
+  transform: translate(75px, -90px) rotate(45deg);
+}
+
+.f3 {
+  transform: translate(-75px, -180px) rotate(-45deg);
+  fill: #ccd65c;
+}
+.f3.right {
+  transform: translate(75px, -180px) rotate(45deg);
+}
+
+.f4 {
+  transform: translate(0, -270px) rotate(0);
+  fill: #dfe87d;
+}

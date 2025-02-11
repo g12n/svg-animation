@@ -1,0 +1,24 @@
+svg {
+    background: #111;
+    perspective: 50px;
+}
+circle,
+.equator {
+  stroke: hsl(350, 100%, 50%);
+  stroke-width: 2px;
+  fill:none;
+}
+
+.equator {
+  transform:  rotateZ(-20deg)  rotateX(125deg)
+}
+
+.meridian{  
+  animation: turn 1s infinite linear;
+  transform:  rotateZ(-20deg) rotateX(35deg) rotateY(var(--start))
+}
+@keyframes turn{
+  100% {
+    transform:  rotateZ(-20deg) rotateX(35deg) rotateY(var(--end))
+  }
+}

@@ -1,0 +1,17 @@
+---
+title: Red Planet
+permalink: "svg/red-planet.svg"
+tags: circleAnimations
+background: 111
+color: e00
+---
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-500 -500 1000 1000">
+{% set css %}{% include "./red-planet.css" %}{% endset %}<style>{{ css | safe }}</style>
+<path class="equator" d="M-450,0A 450 450 0 0 0  450 0" opacity="0.3"/>
+{% for i in [1,2,3,4,5,6,7,8,9,10,11,12] %}
+  <circle r="450" class="meridian" style="--start:{{i*15}}deg; --end:{{15+15*i}}deg"/>
+{% endfor %}
+<path class="equator" d="M-450,0A 450 450 0 0 1  450 0" />
+<circle r="450" style="--start:{{i*15}}deg; --end:{{15+15*i}}deg"/>
+</svg>

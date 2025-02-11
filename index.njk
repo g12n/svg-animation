@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G12N animation</title>
+
+<style>
+    body{
+        margin:0;
+font-family: Optima, Candara, 'Noto Sans', source-sans-pro, sans-serif;
+
+    }
+    :root{
+        --cell-min: 40ch;
+        --grid-gap: 0rem;
+    }
+    .circle-animations{
+        display: grid;
+        grid-gap: var(--grid-gap);
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--cell-min)), 1fr));
+    }
+    .circle-svg-section{
+        
+        background-color: var(--bg);
+        color: var(--text-color);
+        display: grid;
+        grid-template-rows: 1fr auto;
+        padding: 2em;
+        justify-items: center;
+        gap: 1em
+    }
+
+    img{
+            width: 100%;
+            height: auto;
+    }
+    h2 {
+        
+        line-height: 1.4em;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        padding: 0.1em 0.2em;
+        font-weight: 200;
+        margin: 0;
+        border-top: 1px solid;
+        border-bottom: 1px solid;
+        text-align: center;
+        width: fit-content;
+    }
+</style>
+
+</head>
+<body>
+<article class="circle-animations">
+{%- for post in collections.circleAnimations -%}
+<section class="circle-svg-section" style="--bg:#{{post.data.background}}; --text-color: #{{post.data.color}} ">
+  <img width="500" height="500" src="{{ post.url }}" title="{{post.data.title}}" alt="{{post.data.alt}}"/>
+  <h2>{{ post.data.title }}</h2>
+</section>
+{%- endfor -%}
+</article>
+</body>
+</html>

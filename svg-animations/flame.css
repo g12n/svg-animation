@@ -1,0 +1,27 @@
+:root{
+  --a: 70deg;
+}
+
+.f, .b{
+  transform: rotate(var(--a)) translateX(0); 
+  animation: f 0.8s  linear infinite
+}
+.f {fill: #ffa666;
+  animation-duration: 0.7s 
+}
+
+.bc,.b{
+  fill:  hsl(220, 20%, 15%)
+}
+.s{
+  stroke: hsl(220, 20%, 15%) ;
+}
+.b{
+  --a: 110deg
+}
+@keyframes f {
+  100% {
+    transform:rotate(var(--a)) translateX(-4px)  ;
+  }
+}
+

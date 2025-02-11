@@ -1,0 +1,56 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-185 -370 370 370">
+  <symbol id="leaf" viewBox="-50 -100 100 100" >
+    <path d="M 0 0 a 65 65 0 0 1 0 -100 a 65 65 0 0 1 0 100"/> 
+  </symbol>
+  <style>@keyframes leaf {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg) scale(0.75);
+    opacity: 0;
+  }
+}
+
+.f1, .f2, .f3, .f4 {
+  transform-origin: 0 -100px;
+  animation: leaf 4s infinite alternate;
+  animation-fill-mode: backwards;
+  animation-delay: 1s;
+}
+
+.f1 {
+  transform: translate(-75px, 0px) rotate(-45deg);
+  fill: #888f3d;
+}
+.f1.right {
+  transform: translate(75px, 0px) rotate(45deg);
+}
+
+.f2 {
+  transform: translate(-75px, -90px) rotate(-45deg);
+  fill: #b5bf40;
+}
+.f2.right {
+  transform: translate(75px, -90px) rotate(45deg);
+}
+
+.f3 {
+  transform: translate(-75px, -180px) rotate(-45deg);
+  fill: #ccd65c;
+}
+.f3.right {
+  transform: translate(75px, -180px) rotate(45deg);
+}
+
+.f4 {
+  transform: translate(0, -270px) rotate(0);
+  fill: #dfe87d;
+}</style>
+  <circle cx="0" cy="0" r="20"></circle>
+  <use class="f4" href="#leaf" x="-50" y="-100" height="100" width="100"/>
+  <use class="f3" href="#leaf" x="-50" y="-100" height="100" width="100"/>
+  <use class="f3 right" href="#leaf" x="-50" y="-100" height="100" width="100"/>
+  <use class="f2" href="#leaf" x="-50" y="-100" height="100" width="100"/>
+  <use class="f2 right" href="#leaf" x="-50" y="-100" height="100" width="100"/>
+  <use class="f1" href="#leaf" x="-50" y="-100" height="100" width="100"/>
+  <use class="f1 right" href="#leaf" x="-50" y="-100" height="100" width="100"/>
+</svg>

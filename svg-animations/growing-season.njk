@@ -1,0 +1,23 @@
+---
+title: Growth
+alt: 6 Leaves sprouting from a comon source
+permalink: "/svg/grow.svg"
+tags: circleAnimations
+background: f0f2d9
+color: 666b2e;
+---
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-185 -370 370 370">
+  <symbol id="leaf" viewBox="-50 -100 100 100" >
+    <path d="M 0 0 a 65 65 0 0 1 0 -100 a 65 65 0 0 1 0 100"/> 
+  </symbol>
+  {% set css %}{% include "./growing-season.css" %}{% endset %}<style>{{ css | safe }}</style>
+  <circle cx="0" cy="0" r="20"></circle>
+  <use class="f4" href="#leaf" x="-50" y="-100" height="100" width="100"/>
+  <use class="f3" href="#leaf" x="-50" y="-100" height="100" width="100"/>
+  <use class="f3 right" href="#leaf" x="-50" y="-100" height="100" width="100"/>
+  <use class="f2" href="#leaf" x="-50" y="-100" height="100" width="100"/>
+  <use class="f2 right" href="#leaf" x="-50" y="-100" height="100" width="100"/>
+  <use class="f1" href="#leaf" x="-50" y="-100" height="100" width="100"/>
+  <use class="f1 right" href="#leaf" x="-50" y="-100" height="100" width="100"/>
+</svg>

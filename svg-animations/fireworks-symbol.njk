@@ -1,0 +1,34 @@
+---
+title: Celebration
+alt: SVG Animation of fireworks above stylized mounta
+permalink: "svg/fireworks-symbol.svg"
+background: 0f1624
+color: ffcc99;
+codepen: https://codepen.io/g12n/pen/aprBQX
+---
+<svg viewBox="-450 -450 900 900" xmlns="http://www.w3.org/2000/svg" >
+  <linearGradient id="Gradient2" x1="0" x2="0" y1="0" y2="1">
+    <stop offset="0%" stop-color="#090911" />
+    <stop offset="100%" stop-color="#13566c"/>
+   </linearGradient>
+    <clipPath id="FireworksClipPath">
+      <circle r="450" />
+    </clipPath>
+  <symbol id="sparks" width="600" height="600" viewBox="-300 -300 600 600" >
+    <circle class="spark" r="10" style="--angle: 300deg;"></circle>
+    <circle class="spark" r="10" style="--angle: 240deg;"></circle>
+    <circle class="spark" r="10" style="--angle: 180deg;"></circle>
+    <circle class="spark" r="10" style="--angle: 120deg;"></circle>
+    <circle class="spark" r="10" style="--angle: 60deg;"></circle>
+    <circle class="spark" r="10" style="--angle: 0deg;"></circle>
+  </symbol>
+  {% set css %}{% include "./fireworks-symbol.css" %}{% endset %}<style>{{ css | safe }}</style>
+  <g clip-path="url(#FireworksClipPath)">
+  <circle fill="url(#Gradient2)" r="450"  />
+    <use x="-300" y="-600" href="#sparks" style="--delay: -1.6s; --scale:0.5" />
+    <use x="-490" y="-500" href="#sparks" style="--delay: -4.2s"/>
+    <use x="100" y="-400" href="#sparks" style="--delay: -4.9s; --scale:0.8"/>
+    <use x="-100" y="-500" href="#sparks" style="--delay: -3.12s; --scale:0.8"/>
+    <polygon fill="#061c23" points="-500,150 -250,0 0,150 250,0 500,150 500,500 -500 500"></polygon>
+  </g>
+</svg>

@@ -1,0 +1,67 @@
+.sky {
+    fill: #051e33;
+  }
+  
+  .fire-dark {
+    fill: #0a3d66;
+  }
+  
+  .fire-bright {
+    fill: #147acc;
+  }
+  
+  .rocket-bright {
+    fill: #ff6692;
+  }
+  
+  .rocket-dark {
+    fill: #ff0049;
+  }
+  
+  .star {
+    /*fill: #fffbd1;*/
+  }
+  
+  #space{
+    width: 80
+  }
+
+@keyframes openrocketstage {
+    0%, 90%, 100% {
+        transform: scale(0,0);
+    }
+    25%,75%{
+        transform: scale(1,1);
+      }
+  }
+
+@keyframes launchrocket {
+    0%{
+      transform: translate(-500px,500px);
+    } 
+    25%{
+        transform: translate(0,0);
+    }
+}
+@keyframes starparalax {
+    0%{
+      transform: translate(100px,-100px);
+    }
+    25%{
+        transform: translate(0,0);
+    }
+}
+
+#clipCircle{
+    animation: openrocketstage 6s ease-in-out 0s infinite;
+
+}
+
+#rocket{
+    animation: launchrocket 6s ease-in-out 0s infinite;
+}
+
+#stars{
+    animation: starparalax 6s ease-in-out 0s infinite;
+}
+

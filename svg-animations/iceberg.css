@@ -1,0 +1,78 @@
+.sky-bright {
+  stop-color: #d1f3fa;
+}
+
+.sky-dark {
+  stop-color: #70a7c2;
+}
+
+.beam-gradient {
+  stop-color: #e9fef6;
+}
+
+.ocean-surface {
+  fill: #ade0eb;
+}
+
+.ocean-shallow {
+  stop-color: #9fc2ca;
+}
+
+.ocean-deep {
+  stop-color: #306b98;
+}
+
+.ice {
+  fill: #f6f6ff;
+}
+
+.ice-dark {
+  fill: #d7eef2;
+}
+
+.ice-shade {
+  fill: #e8f7f9;
+}
+
+/*Light Beams*/
+
+@keyframes beams {
+  100% {
+    opacity: 0.8;
+  }
+}
+.beam {
+  opacity: 0;
+          animation: beams 3.5s both infinite alternate;
+          animation-delay: var(--delay);
+}
+
+/*Waves-Movements*/
+.wave{
+    animation: waves-move 7s infinite linear;
+    animation-fill-mode: backwards;
+}
+
+.reverse {
+  animation-direction: reverse;
+}
+
+@keyframes waves-move {
+  100% {
+    transform: translate(500px, 0);
+  }
+}
+
+/*Ice Berg Animation*/
+
+.ice-berg {
+  animation: ice-berg 3s ease-in-out infinite alternate;
+  transform: rotate(-4deg) translate(0, 0);
+  transform-origin: 400px 400px;
+}
+
+@keyframes ice-berg {
+  100% {
+    transform: rotate(4deg) translate(10px, 48px);
+  }
+}

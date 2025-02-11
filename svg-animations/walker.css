@@ -1,0 +1,28 @@
+
+path{
+    stroke-width:30;
+    stroke-linejoin:round;
+    stroke-linecap:round}
+.f,#n{stroke:#c12;
+  animation: f 0.9s infinite linear}
+#b{stroke:#d12; stroke-width:100; }
+.fb, #g {stroke: #901}
+.f.d,#n{animation-delay: -0.45s}
+#h,#n {
+  animation: b 0.5s infinite linear;
+}
+#c {animation: c 6s infinite linear}
+  @keyframes f {
+    25% {transform: translate(0, -15px)}
+    50% {transform: translate(10px, -15px);}
+    75% {transform: translate(10px, 0px);}
+  }
+  @keyframes c {
+    0% {transform: translateX(-370px)}
+    100% {transform: translateX(370px)}
+  }
+  @keyframes b {
+    50% {
+        transform: translateY(-5px);
+    }
+  }

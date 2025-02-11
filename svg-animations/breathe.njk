@@ -1,0 +1,18 @@
+---
+title: breathe
+permalink: "svg/breathe.svg"
+tags: circleAnimations
+background: E5E6FF
+color: FF0066
+---
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-5 -5 10 10">
+{% set css %}{% include "./breathe.css" %}{% endset %}<style>{{ css | safe }}</style>
+  <g>
+    <circle r="2" style="--a:300deg"/>
+    <circle r="2" style="--a:240deg"/>
+    <circle r="2" style="--a:180deg"/>
+    <circle r="2" style="--a:120deg"/>
+    <circle r="2" style="--a:60deg"/>
+    <circle r="2" style="--a:0"/>
+  </g>
+</svg>

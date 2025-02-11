@@ -1,0 +1,55 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-500 -500 1000 1000">
+<style>svg {
+    background: #111;
+    perspective: 50px;
+}
+circle,
+.equator {
+  stroke: hsl(350, 100%, 50%);
+  stroke-width: 2px;
+  fill:none;
+}
+
+.equator {
+  transform:  rotateZ(-20deg)  rotateX(125deg)
+}
+
+.meridian{  
+  animation: turn 1s infinite linear;
+  transform:  rotateZ(-20deg) rotateX(35deg) rotateY(var(--start))
+}
+@keyframes turn{
+  100% {
+    transform:  rotateZ(-20deg) rotateX(35deg) rotateY(var(--end))
+  }
+}</style>
+<path class="equator" d="M-450,0A 450 450 0 0 0  450 0" opacity="0.3"/>
+
+  <circle r="450" class="meridian" style="--start:15deg; --end:30deg"/>
+
+  <circle r="450" class="meridian" style="--start:30deg; --end:45deg"/>
+
+  <circle r="450" class="meridian" style="--start:45deg; --end:60deg"/>
+
+  <circle r="450" class="meridian" style="--start:60deg; --end:75deg"/>
+
+  <circle r="450" class="meridian" style="--start:75deg; --end:90deg"/>
+
+  <circle r="450" class="meridian" style="--start:90deg; --end:105deg"/>
+
+  <circle r="450" class="meridian" style="--start:105deg; --end:120deg"/>
+
+  <circle r="450" class="meridian" style="--start:120deg; --end:135deg"/>
+
+  <circle r="450" class="meridian" style="--start:135deg; --end:150deg"/>
+
+  <circle r="450" class="meridian" style="--start:150deg; --end:165deg"/>
+
+  <circle r="450" class="meridian" style="--start:165deg; --end:180deg"/>
+
+  <circle r="450" class="meridian" style="--start:180deg; --end:195deg"/>
+
+<path class="equator" d="M-450,0A 450 450 0 0 1  450 0" />
+<circle r="450" style="--start:NaNdeg; --end:NaNdeg"/>
+</svg>

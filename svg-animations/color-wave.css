@@ -1,0 +1,15 @@
+svg{
+  background: #f9f4ec;
+}
+circle {
+  animation: b 1s cubic-bezier(0.420, 0.000, 0.580, 1.000) alternate infinite;
+  opacity: 0.8;
+  transform: translateY(-6px) scale(0.3); transform-origin: 50% 50%;
+}
+
+@keyframes b {
+ 100%{
+    transform: translateY(6px) scale(1)
+  }
+}
+

@@ -1,0 +1,84 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="-6 -6 12 12">
+
+<clipPath id="PrismaClipPath">
+      <circle r="5" />
+</clipPath>
+
+
+<style>:root{
+  --a:0;
+  --d:0;
+}
+
+use{
+  transform: rotate(var(--a)) translateX(0); 
+  fill: hsl(var(--a) 50% 50%);  
+  mix-blend-mode: screen;
+  opacity: 1;
+  animation: move 2s linear infinite;
+  animation-delay: var(--d);
+
+}
+
+.bg{ fill:#000}
+  @media (prefers-color-scheme: dark) {
+    use{
+      mix-blend-mode: multiply;
+    }
+    .bg{ fill:#fff}
+  }
+
+  @keyframes move {
+    100% {
+      transform:rotate(var(--a)) translateX(8px)  ;
+    }
+  }
+  </style>
+
+<circle r="5.2" class="bg" />
+
+
+<g clip-path="url(#PrismaClipPath)">
+<path id="wave"  d="M-16 3 q2 1 4 0 t 4 0 t 4 0 t 4 0t 4 0 t 4 0 t 4 0 t 4 0 v10 H-16 z"/>
+<circle r="5" class="bg" />
+
+
+
+<use href="#wave" style="--a:30deg; --d:-0.5s" />
+
+
+<use href="#wave" style="--a:60deg; --d:-1s" />
+
+
+<use href="#wave" style="--a:90deg; --d:-1.5s" />
+
+
+<use href="#wave" style="--a:120deg; --d:-2s" />
+
+
+<use href="#wave" style="--a:150deg; --d:-2.5s" />
+
+
+<use href="#wave" style="--a:180deg; --d:-3s" />
+
+
+<use href="#wave" style="--a:210deg; --d:-3.5s" />
+
+
+<use href="#wave" style="--a:240deg; --d:-4s" />
+
+
+<use href="#wave" style="--a:270deg; --d:-4.5s" />
+
+
+<use href="#wave" style="--a:300deg; --d:-5s" />
+
+
+<use href="#wave" style="--a:330deg; --d:-5.5s" />
+
+
+<use href="#wave" style="--a:360deg; --d:-6s" />
+
+</g>
+</svg> 
+ 

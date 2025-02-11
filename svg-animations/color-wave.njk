@@ -1,0 +1,13 @@
+---
+title: colorful wave
+permalink: "svg/color-wave.svg"
+tags: circleAnimations
+background: f9f4ec
+color: 856647
+---
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -10 55 20">
+{% set css %}{% include "./color-wave.css" %}{% endset %}<style>{{ css | safe }}</style>
+ {% for item in [1,2,3,4,5,6,7,8,9,10] %}
+  <circle cx="{{item*5}}" fill="hsl({{20*item-20}},70%,70%)" r="2"  style="transform-origin: {{item*5}}px 0; animation-delay:{{item*-0.2}}s "/>
+  {% endfor %}
+</svg>

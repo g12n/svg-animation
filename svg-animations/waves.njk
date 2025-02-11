@@ -1,0 +1,29 @@
+---
+title: Adventurous
+alt: An orange paper boat floating on blue waves. The level of the water slowly rises and falls.
+permalink: "svg/waves.svg"
+tags: circleAnimations
+background: DBF3FF
+color: ED500C
+---
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-6 -6 12 12">
+	{% set css %}{% include "./waves.css" %}{% endset %}<style>{{ css | safe }}</style>
+	<clipPath id="wavesClipPath">
+    	<circle cx="0" cy="0" r="6" />
+  	</clipPath>
+	<g clip-path="url(#wavesClipPath)">
+	<circle fill="hsl(200 80% 90%)" r="6" />
+	<g class="wg">
+		<path fill="hsl(200 900% 70%)" opacity="0.5" class="w2" d="M-8 -0.6q2 1 4 0t4 0 4 0 4 0 4 0 4 0v13h-24z" /> 
+	</g>
+	<g class="wg">
+		<g class="b">
+			<path fill="hsl(20 90% 60%)" d="M-1.5,1l-2.286,-2.286l2,0.286l2,-2l2,2l2,-0.286l-2.285,2.286h-3.429v0z" />
+			<path fill="none" stroke="hsl(18 80% 50%)" d="M-1.5,1l-2.286,-2.286l2,0.286m0.286,2h3.429m-3.429,0l1.714,-1.714m1.715,1.714l2.285,-2.286l-2,0.286m-0.285,2l-1.715,-1.714m0,0l2,-0.286m-2,0.286l-1,-0.143l-1,-0.143m4,0l-2,-2l-2,2" stroke-width="0.1" stroke-linejoin="round" />
+		</g>
+	</g>
+	<g class="wg">
+		<path fill="hsl(200 95% 60%)" class="w1" d="M-16 0q2 1 4 0t4 0 4 0 4 0 4 0 4 0v13h-24z"/> 
+	</g>
+	</g>
+</svg>

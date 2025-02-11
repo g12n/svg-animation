@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-5 -5 10 10">
+<style>svg {background: hsl(240, 100%, 95%)}
+circle {
+  animation: b 20s cubic-bezier(0.65, 0.05, 0.36, 1) infinite;
+  transform: rotate(var(--a));
+  fill: hsla(340, 100%, 60%,0.2);
+}
+g{
+  animation: r 120s linear infinite;
+}
+@keyframes b {
+ 45%, 55% {
+    transform: rotate(var(--a)) translateX(2px)
+  }
+}
+@keyframes r {
+  100% {
+    transform: rotate(1turn)
+  }
+}
+
+</style>
+  <g>
+    <circle r="2" style="--a:300deg"/>
+    <circle r="2" style="--a:240deg"/>
+    <circle r="2" style="--a:180deg"/>
+    <circle r="2" style="--a:120deg"/>
+    <circle r="2" style="--a:60deg"/>
+    <circle r="2" style="--a:0"/>
+  </g>
+</svg>

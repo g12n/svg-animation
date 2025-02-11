@@ -1,0 +1,20 @@
+svg {background: hsl(240, 100%, 95%)}
+circle {
+  animation: b 20s cubic-bezier(0.65, 0.05, 0.36, 1) infinite;
+  transform: rotate(var(--a));
+  fill: hsla(340, 100%, 60%,0.2);
+}
+g{
+  animation: r 120s linear infinite;
+}
+@keyframes b {
+ 45%, 55% {
+    transform: rotate(var(--a)) translateX(2px)
+  }
+}
+@keyframes r {
+  100% {
+    transform: rotate(1turn)
+  }
+}
+
