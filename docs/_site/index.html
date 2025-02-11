@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G12N animation</title>
+
+<style>
+    body{
+        margin:0;
+font-family: Optima, Candara, 'Noto Sans', source-sans-pro, sans-serif;
+
+    }
+    :root{
+        --cell-min: 40ch;
+        --grid-gap: 0rem;
+    }
+    .circle-animations{
+        display: grid;
+        grid-gap: var(--grid-gap);
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--cell-min)), 1fr));
+    }
+    .circle-svg-section{
+        
+        background-color: var(--bg);
+        color: var(--text-color);
+        display: grid;
+        grid-template-rows: 1fr auto;
+        padding: 2em;
+        justify-items: center;
+        gap: 1em
+    }
+
+    img{
+            width: 100%;
+            height: auto;
+    }
+    h2 {
+        
+        line-height: 1.4em;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        padding: 0.1em 0.2em;
+        font-weight: 200;
+        margin: 0;
+        border-top: 1px solid;
+        border-bottom: 1px solid;
+        text-align: center;
+        width: fit-content;
+    }
+</style>
+
+</head>
+<body>
+<article class="circle-animations"><section class="circle-svg-section" style="--bg:#E5E6FF; --text-color: #FF0066 ">
+  <img width="500" height="500" src="/svg/breathe.svg" title="breathe" alt=""/>
+  <h2>breathe</h2>
+</section><section class="circle-svg-section" style="--bg:#f9f4ec; --text-color: #856647 ">
+  <img width="500" height="500" src="/svg/color-wave.svg" title="colorful wave" alt=""/>
+  <h2>colorful wave</h2>
+</section><section class="circle-svg-section" style="--bg:#0f1624; --text-color: #ffcc99; ">
+  <img width="500" height="500" src="/svg/fireworks.svg" title="Celebration" alt="SVG Animation of fireworks above stylized mounta"/>
+  <h2>Celebration</h2>
+</section><section class="circle-svg-section" style="--bg:#1f242e; --text-color: #f7e3d4; ">
+  <img width="500" height="500" src="/svg/flame.svg" title="Humanism" alt="stylized etenal flame in da bowl"/>
+  <h2>Humanism</h2>
+</section><section class="circle-svg-section" style="--bg:#f0f2d9; --text-color: #666b2e; ">
+  <img width="500" height="500" src="/svg/grow.svg" title="Growth" alt="6 Leaves sprouting from a comon source"/>
+  <h2>Growth</h2>
+</section><section class="circle-svg-section" style="--bg:#f2ead9; --text-color: #6b572e ">
+  <img width="500" height="500" src="/svg/iceberg.svg" title="iceberg" alt=""/>
+  <h2>iceberg</h2>
+</section><section class="circle-svg-section" style="--bg:#100022; --text-color: #fff ">
+  <img width="500" height="500" src="/svg/prisma.svg" title="Prisma" alt=""/>
+  <h2>Prisma</h2>
+</section><section class="circle-svg-section" style="--bg:#111; --text-color: #e00 ">
+  <img width="500" height="500" src="/svg/red-planet.svg" title="Red Planet" alt=""/>
+  <h2>Red Planet</h2>
+</section><section class="circle-svg-section" style="--bg:#660099; --text-color: #66FF33 ">
+  <img width="500" height="500" src="/svg/rocket.svg" title="Rocket" alt=""/>
+  <h2>Rocket</h2>
+</section><section class="circle-svg-section" style="--bg:#ffe; --text-color: #162643 ">
+  <img width="500" height="500" src="/svg/spring2021.svg" title="Spring" alt=""/>
+  <h2>Spring</h2>
+</section><section class="circle-svg-section" style="--bg:#B1ECE2; --text-color: #e61d0e ">
+  <img width="500" height="500" src="/svg/walker.svg" title="creative creature" alt=""/>
+  <h2>creative creature</h2>
+</section><section class="circle-svg-section" style="--bg:#DBF3FF; --text-color: #ED500C ">
+  <img width="500" height="500" src="/svg/waves.svg" title="Adventurous" alt="An orange paper boat floating on blue waves. The level of the water slowly rises and falls."/>
+  <h2>Adventurous</h2>
+</section></article>
+</body>
+</html>
