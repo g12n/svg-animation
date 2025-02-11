@@ -21,7 +21,7 @@ font-family: Optima, Candara, 'Noto Sans', source-sans-pro, sans-serif;
         grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--cell-min)), 1fr));
     }
     .circle-svg-section{
-        
+
         background-color: var(--bg);
         color: var(--text-color);
         display: grid;
@@ -55,7 +55,7 @@ font-family: Optima, Candara, 'Noto Sans', source-sans-pro, sans-serif;
 <article class="circle-animations">
 {%- for post in collections.circleAnimations -%}
 <section class="circle-svg-section" style="--bg:#{{post.data.background}}; --text-color: #{{post.data.color}} ">
-  <img width="500" height="500" src="{{ post.url }}" title="{{post.data.title}}" alt="{{post.data.alt}}"/>
+  <img width="500" height="500" src="svg/{{ post.fileSlug }}.svg" title="{{post.data.title}}" alt="{{post.data.alt}}"/>
   <h2>{{ post.data.title }}</h2>
 </section>
 {%- endfor -%}
