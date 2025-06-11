@@ -1,0 +1,56 @@
+<svg id="maks" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 1000">
+  <defs>
+    <clipPath id="clip-path">
+      <circle cx="500" cy="500" r="450"/>
+    </clipPath>
+    <radialGradient id="sky" cx="565" cy="533" r="491" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#789"/>
+    </radialGradient>
+  </defs>
+  <g clip-path="url(#clip-path)">
+    <rect id="sky" fill="url(#sky)" width="1000" height="1000"/>
+    <path fill="#cde" d="M231,349l65,81l48,-41l71,69l115,-60l178,120l0,334l-708,-6l-2,-300l233,-197z"/>
+    <path fill="#fff" d="M173 398 L195 434 L233 404 L272 401 L231 349 L173 398 Z M308 420 L336 444 L376 420 L344 389 L308 420 Z M493 418 L525 444 L571 425 L530 398 L493 418 Z"/>
+    <path fill="#bcd" d="M 0 500 a 800 800 0 0 1 500 50 a 800 800 0 0 1 500 0v1000 h-1000z"/>
+    <path fill="#abc" d="M -100 700 a 800 800 0 0 1 400 50 a 800 800 0 0 1 600 0v1000 h-1000z"/>
+    <path d="m 100 0 q 60 100 0 200 t0 200 0 200 0 200 0 200
+        M 200 -50 q 60 100 0 200 t0 200 0 200 0 200 0 200
+        M 300 50 q 60 100 0 200 t0 200 0 200 0 200 0 200
+        M 400 -60 q 60 100 0 200 t0 200 0 200 0 200 0 200
+        M 500 60 q 60 100 0 200 t0 200 0 200 0 200 0 200
+        M 600 -80 q 60 100 0 200 t0 200 0 200 0 200 0 200
+        M 700 80 q 60 100 0 200 t0 200 0 200 0 200 0 200
+        M 800 0 q 60 100 0 200 t0 200 0 200 0 200 0 200
+        M 900 0 q 60 100 0 200 t0 200 0 200 0 200 0 200" 
+        stroke="#fff" stroke-width="10" stroke-linecap="round" stroke-dasharray="0 123"
+        fill="none" transform="translate(100 0)" opacity="0.4">
+		<animate attributeName="stroke-dashoffset" to="-123" dur="2s" begin="-0.9s" repeatCount="indefinite" />
+    </path>
+    <path fill="#fff" d="m 710 0 l -26 1000 114 0 l -20 -1000"/>
+    <path fill="black" d="M 703 370 l40,12l-40,9
+      M 705,292l46,12l-46,8
+      M707,150l25,6l-25,5
+      M699,476l40,12l-40,9
+      M692,637l59,12t-60,9
+      M683,790l61,12t-63,9
+      M800,749l-56,-11t55,-8
+      M786,452l-42,-8t41,-6
+      M782,345l-28,-3l28,-3
+      M779,213l-25,-8l25,-4"/>
+    <path d="m 100 0 q 20 100 0 200 t0 200 0 200 0 200 0 200
+        M 200 -50 q 40 100 0 200 t0 200 0 200 0 200 0 200
+        M 300 50 q 60 100 0 200 t0 200 0 200 0 200 0 200
+        M 400 -60 q 80 100 0 200 t0 200 0 200 0 200 0 200
+        M 500 60 q 100 100 0 200 t0 200 0 200 0 200 0 200
+        M 600 -80 q 80 100 0 200 t0 200 0 200 0 200 0 200
+        M 700 80 q 60 100 0 200 t0 200 0 200 0 200 0 200
+        M 800 0 q 40 100 0 200 t0 200 0 200 0 200 0 200
+        M 900 0 q 20 100 0 200 t0 200 0 200 0 200 0 200
+        " stroke="#fff" stroke-width="20" stroke-linecap="round" stroke-dasharray="0 223"
+        fill="none">
+		    <animate attributeName="stroke-dashoffset" to="-223" dur="2s" repeatCount="indefinite" />
+        </path>
+  </g>
+    <circle cx="500" cy="500" r="420" stroke="#fff" stroke-width="10" opacity="0.9" fill="none"/>
+</svg>
