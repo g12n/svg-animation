@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="world" viewBox="-500 -500 1000 1000">
+  <defs>
+    <clipPath id="c">
+      <circle r="400"/>
+    </clipPath>
+    <clipPath id="e">
+      <path d="M-500 0H500v500H-500z"/>
+    </clipPath>
+    <symbol id="b" viewBox="-20 -20 40 40">
+      <circle r="20" fill="#fff6" class="stars"/>
+    </symbol>
+    <symbol id="d" viewBox="0 0 1000 1000">
+      <path fill="url(#a)" d="M0 0h1000v1000H0z"/>
+      <circle cx="658" cy="265" r="62" fill="oklch(0.95 0.0 24)" class="sun"/>
+      <use xlink:href="#b" width="10" height="10" x="350" y="550" class="star"/>
+      <use xlink:href="#b" width="10" height="10" x="470" y="650" class="star"/>
+      <use xlink:href="#b" width="8" height="8" x="430" y="750" class="star"/>
+      <use xlink:href="#b" width="9" height="9" x="250" y="650" class="star"/>
+      <use xlink:href="#b" width="9" height="9" x="590" y="780" class="star"/>
+      <use xlink:href="#b" width="5" height="5" x="700" y="750" class="star"/>
+      <use xlink:href="#b" width="4" height="4" x="300" y="800" class="star"/>
+      <animateTransform attributeName="transform" attributeType="XML" dur="10s" from="0 500 500" repeatCount="indefinite" to="360 500 500" type="rotate"/>
+    </symbol>
+    <radialGradient id="a" cx="737.5" cy="94.6" r="800" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffd7ac"/>
+      <stop offset=".5" stop-color="#f8a7a1"/>
+      <stop offset=".9" stop-color="#6d5d91"/>
+    </radialGradient>
+  </defs>
+  <g clip-path="url(#c)">
+    <use xlink:href="#d" x="-500" y="-500"/>
+    <g class="reflection" clip-path="url(#e)">
+      <use xlink:href="#d" x="-500" y="-500" transform="scale(1 -1)"/>
+      <path fill="#0006" d="M-500 0H500v500H-500z"/>
+    </g>
+    <g style="filter:brightness(.8)" transform="scale(1 -1)">
+      <use xlink:href="#f" y="-100"/>
+      <use xlink:href="#g" y="-160"/>
+    </g>
+    <path id="f" fill="#f8a7a1" d="M-40 50-190-50-390 50" class="hill_back"/>
+    <path id="g" fill="#6d5d91" d="M40 80-110-20-310 80" class="hill"/>
+  </g>
+</svg>
